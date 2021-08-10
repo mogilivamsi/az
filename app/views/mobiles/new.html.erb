@@ -1,0 +1,17 @@
+<h1>Mobiles#new</h1>
+<p>Find me in app/views/mobiles/new.html.erb</p>
+<h1>New Article</h1>
+
+<%= form_with model: @mobile do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </div>
+
+  <div>
+    <%= form.submit %>
